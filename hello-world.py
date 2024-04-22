@@ -10,7 +10,9 @@ def welcome():
 
 @flow(log_prints=True)
 def hello_world():
-    for i in range(random.randint(3,6)):
+    n = random.randint(3,6)
+    print(f"number of tasks generated - {n}")
+    for i in range(n):
         print(f"Starting Task - {i+1}")
         welcome()
         time.sleep(5)
